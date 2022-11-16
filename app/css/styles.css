@@ -1,0 +1,101 @@
+:root {
+    --principal-white: #FFFFFF;
+    --secondary-grey: #C0C0C0;
+    --background-site: #000000;
+}
+
+body {
+    background-color: var(--background-site);
+    color: var(--principal-white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url("../fonts/futura-medium-bt.ttf");
+    font-family: futura-medium;
+}
+
+main {
+    width: 100vw;
+}
+
+header img {
+    filter: drop-shadow(0 0 0.75rem black);
+    width: 60%;
+    margin: auto;
+    padding: 3%;
+}
+
+header {
+    background-image: url("../img/fire-flames-on-black-background.jpg");
+    background-position: center;
+    width: 100vw;
+    height: 20vw;
+}
+
+.image-header {
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+nav {
+    width: 100vw;
+    height: 5vw;
+    display: flex;
+}
+
+nav div {
+    width: 33%;
+    height: 100%;
+    display: inline-block;
+    margin: auto;
+    background-color: black;
+
+}
+
+nav div:hover {
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+}
+
+nav div h1 {
+    text-align: center;
+    color: white;
+    font-size: 1.2vw;
+    padding: 5% 0;
+    font-family: futura-medium, Arial, Helvetica, sans-serif;
+}
+
+nav div a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 20vw;
+    background-color: black;
+    display: flex;
+}
+
+.container div {
+    width: 50%;
+    height: 100%;
+}
+
+.quem-somos-div-img {
+    background: linear-gradient(to right,
+    rgba(0, 0, 0, 0) 20%,
+    rgb(0, 0, 0)),
+    url("../img/8a13d0d9-4914-4fea-aeb1-8fd2e4481669.jpg");
+    background-size: cover;
+}
+

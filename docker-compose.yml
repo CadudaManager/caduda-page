@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  caduda-page:
+    working_dir: /app
+    image: httpd:2.4
+    container_name: caduda-api
+    build:
+      context: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ".:/app"
+    restart: always
+    environment:
+      ANBIENT: 2
