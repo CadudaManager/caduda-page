@@ -4,6 +4,16 @@
     --background-site: #000000;
 }
 
+@font-face {
+    src: url("../fonts/futura-medium-bt.ttf");
+    font-family: futura-medium;
+}
+
+@font-face {
+    src: url("../fonts/futura-light-bt.ttf");
+    font-family: futura-light;
+}
+
 body {
     background-color: var(--background-site);
     color: var(--principal-white);
@@ -14,11 +24,7 @@ body {
     padding: 0;
     border: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    src: url("../fonts/futura-medium-bt.ttf");
-    font-family: futura-medium;
+    font-family: futura-medium, Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -91,6 +97,14 @@ nav div a {
     height: 100%;
 }
 
+.container div p {
+    padding: 40px;
+    text-align: right;
+    margin-top: 20%;
+    font-size: 1.5rem;
+
+}
+
 .quem-somos-div-img {
     background: linear-gradient(to right,
     rgba(0, 0, 0, 0) 20%,
@@ -98,4 +112,89 @@ nav div a {
     url("../img/8a13d0d9-4914-4fea-aeb1-8fd2e4481669.jpg");
     background-size: cover;
 }
+
+#cardapio {
+    width: 100%;
+    height: 40vw;
+}
+
+.cardapio-container {
+    width: 50%;
+    height: 100%;
+}
+
+.cardapio-sessoes {
+    width: 50%;
+    height: 15%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#cardapio div h1 {
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    text-align: center;
+    margin-left: 20%;
+    font-family: futura-light, Arial, Helvetica, sans-serif;
+    font-size: 1.8vw;
+}
+
+#cardapio div h1:hover {
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+}
+
+#onde-estamos {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+}
+
+.onde-estamos-container {
+    width: 50%;
+    height: 100%;
+}
+
+.onde-estamos-sessoes {
+    width: 100%;
+    height: 17%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#onde-estamos div h1 {
+    width: 40%;
+    height: 95%;
+    padding: 2.5%;
+    text-align: center;
+    margin-left: 20%;
+    font-family: futura-light, Arial, Helvetica, sans-serif;
+    background-color: black;
+    font-size: 1.8vw;
+}
+
+#onde-estamos div h1:hover {
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+}
+
+.onde-estamos-div-img {
+    background: linear-gradient(to right,
+    rgba(0, 0, 0, 0) 20%,
+    rgb(0, 0, 0)),
+    url("../img/9ea231e7-3068-40ba-8db1-a50495c8321b.jpg");
+    background-size: cover;
+}
+
+.onde-estamos-div-map {
+    margin-top: 6%;
+    width: 80%;
+    height: 80%;
+    background-image: url("../img/map-espetinho-orlando.png");
+    background-size: cover;
+}
+
 
