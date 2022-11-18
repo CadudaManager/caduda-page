@@ -100,8 +100,9 @@ nav div a {
 .container div p {
     padding: 40px;
     text-align: right;
-    margin-top: 20%;
-    font-size: 1.5rem;
+    margin-top: 15%;
+    margin-right: 2%;
+    font-size: 1.5vw;
 
 }
 
@@ -152,10 +153,23 @@ nav div a {
     display: flex;
 }
 
-.onde-estamos-container {
+.onde-estamos-container1 {
     width: 50%;
     height: 100%;
 }
+
+.onde-estamos-container2 {
+    width: 50%;
+    height: 100%;
+}
+
+.onde-estamos-container-inside {
+    padding: 5% 7%;
+    width: 85%;
+    height: 85%;
+
+}
+
 
 .onde-estamos-sessoes {
     width: 100%;
@@ -187,14 +201,77 @@ nav div a {
     rgb(0, 0, 0)),
     url("../img/9ea231e7-3068-40ba-8db1-a50495c8321b.jpg");
     background-size: cover;
+
 }
 
-.onde-estamos-div-map {
-    margin-top: 6%;
-    width: 80%;
-    height: 80%;
+
+.onde-estamos-div-map-orlando {
+    width: 40vw;
+    height: 25vw;
     background-image: url("../img/map-espetinho-orlando.png");
     background-size: cover;
+    position: absolute;
 }
 
+.onde-estamos-div-map-atalaia {
+    width: 40vw;
+    height: 25vw;
+    background-image: url("../img/map-espetinho-atalaia.png");
+    background-size: cover;
+    position: absolute;
+}
+
+input {
+    display: none;
+}
+
+.btn-map1 {
+    background-color: black;
+    width: 40%;
+    height: 95%;
+    padding: 2.5%;
+    text-align: center;
+    margin-left: 20%;
+    color: #FFFFFF;
+    font-family: futura-light, Arial, Helvetica, sans-serif;
+
+    font-size: 1.8vw;
+}
+
+
+.btn-map2 {
+    background-color: black;
+    width: 40%;
+    height: 95%;
+    padding: 2.5%;
+    text-align: center;
+    margin-left: 20%;
+    color: #FFFFFF;
+    font-family: futura-light, Arial, Helvetica, sans-serif;
+
+    font-size: 1.8vw;
+}
+
+.btn-map1:hover {
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+}
+
+.btn-map2:hover {
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
+}
+
+#orlando:checked ~ .onde-estamos-div-map-atalaia{
+    opacity: 0%;
+    transition:0.5s;
+}
+
+#atalaia:checked ~ .onde-estamos-div-map-atalaia{
+    opacity: 100%;
+    transition:0.5s;
+
+}
 
