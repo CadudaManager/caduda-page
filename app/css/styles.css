@@ -98,9 +98,9 @@ nav div a {
 }
 
 .container div p {
-    padding: 40px;
+    padding-right: 15%;
+    padding-top: 8%;
     text-align: right;
-    margin-top: 6%;
     margin-right: 2%;
     font-size: 1.2vw;
 
@@ -155,7 +155,7 @@ button.cardapio-sessoes {
     text-align: center;
     color: #FFFFFF;
     font-family: futura-light, Arial, Helvetica, sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.2vw;
 }
 
 #cardapio button:hover, #cardapio button:active {
@@ -166,6 +166,7 @@ ul#produto {
     max-height: 300px;
     overflow-y: auto;
     overflow-x: hidden;
+    font-size: 1.2vw;
 }
 
 ul#produto li {
@@ -331,3 +332,51 @@ input {
     border-width: 2px;
 }
 
+.star-svg{
+    background-color:#ff0;
+}
+.star-svg path{
+    fill: black;
+}
+
+.label-radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div#avaliacoes {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+div.avaliacao-area {
+    height: 360px;
+    padding: 3rem;
+}
+
+input {
+    display: block;
+    z-index: 200;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.form-avaliacao {
+    background-color: #FFFFFF !important;
+    padding: 1%;
+    color: black;
+}
+
+.area-texto {
+    border: 1px black !important;
+}
