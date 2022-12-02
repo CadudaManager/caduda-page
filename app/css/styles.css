@@ -100,9 +100,9 @@ nav div a {
 .container div p {
     padding: 40px;
     text-align: right;
-    margin-top: 15%;
+    margin-top: 6%;
     margin-right: 2%;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 
 }
 
@@ -116,35 +116,68 @@ nav div a {
 
 #cardapio {
     width: 100%;
-    height: 40vw;
+    min-height: 36vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardapio-container {
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardapio-container:nth-child(1) {
+    margin-right: 140px;
 }
 
 .cardapio-sessoes {
-    width: 50%;
-    height: 15%;
+    width: 100%;
+    height: 17%;
     display: flex;
     align-items: flex-end;
+    background-color: black !important;
+
 }
 
-#cardapio div h1 {
-    width: 100%;
-    height: 80%;
+button.cardapio-sessoes {
+    width: 200px;
     padding: 20px;
     text-align: center;
-    margin-left: 20%;
+}
+
+#cardapio button span {
+    width: 100% !important;
+    text-align: center;
+    color: #FFFFFF;
     font-family: futura-light, Arial, Helvetica, sans-serif;
     font-size: 1.8vw;
 }
 
-#cardapio div h1:hover {
-    border-style: solid;
-    border-color: aliceblue;
-    border-width: 2px;
+#cardapio button:hover, #cardapio button:active {
+    border: 2px solid #FFFFFF;
+}
+
+ul#produto {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+ul#produto li {
+    margin: 16px 0;
+    padding-bottom: 2px;
+    list-style: none !important;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+ul#produto li:before {
+    content: '>';
+    margin-right: 0.5rem;
 }
 
 #onde-estamos {
@@ -273,5 +306,28 @@ input {
     opacity: 100%;
     transition:0.5s;
 
+}
+
+.espetinhos {
+    color: #FFFFFF;
+    font-family: futura-light, Arial, Helvetica, sans-serif;
+}
+
+.btn-produtos {
+    width: 40%;
+    vertical-align: middle;
+    height: 95%;
+    padding: 2.5%;
+    text-align: center;
+    margin-left: 40%;
+    color: #FFFFFF;
+    font-family: futura-light, Arial, Helvetica, sans-serif;
+    font-size: 1.8vw;
+}
+
+.btn-produtos:hover {
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 2px;
 }
 

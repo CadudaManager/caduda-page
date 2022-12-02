@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
 
+    <script src="JS/client.js" type="module"></script>
+
 </head>
 
-<script>
-
-</script>
 
 <body>
     <main>
@@ -34,7 +33,7 @@
             </div>
 
             <div>
-                <a href="#cardapio">
+                <a href="#onde-estamos">
                     <h1>Onde Estamos</h1>
                 </a>
             </div>
@@ -44,9 +43,12 @@
             <div class="quem-somos-div-img"></div>
             <div>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Em 2016, o empresário Luiz Caduda, tomou as ruas do Orlando Dantas com uma simples churrasqueira,
+                    algumas cadeiras e muita cerveja gelada. </br> Seu diferencial: o preparo artesanal da carne e um atendimento de primeira.
+                    O negócio cresceu, com o boca a boca sobre a qualidade da nossa carne e nosso atendimento se espalhando pela cidade.
+                    Montamos uma filial para receber nossos clientes e suas famílias em seus momentos de descontração.
+                    Reunimos uma equipe dedicada, que manteve o espírito do Sr Caduda de receber cada cliente como um amigo.
+                    O que nunca vai mudar, não importa o tamanho do nosso negócio.
                 </p>
             </div>
 
@@ -54,24 +56,30 @@
 
         <div id="cardapio">
             <div class="cardapio-container">
-                <div class="cardapio-sessoes"></div>
-                <div class="cardapio-sessoes">
-                    <h1>
+                <button class="cardapio-sessoes btn-produto" id="espetinhos">
+                    <span>
                         Espetinhos
-                    </h1>
-                </div>
+                    </span>
+                </button>
 
-                <div class="cardapio-sessoes">
-                    <h1>
+                <button class="cardapio-sessoes btn-produto" id="drinks">
+                    <span>
                         Drinks
-                    </h1>
+                    </span>
+                </button>
+
+                <button class="cardapio-sessoes btn-produto" id="outros">
+                    <span>
+                        Outros
+                    </span>
+                </button>
+            </div>
+
+            <div class="cardapio-container">
+                <div>
+                    <ul id="produto"></ul>
                 </div>
 
-                <div class="cardapio-sessoes">
-                    <h1>
-                        Outros
-                    </h1>
-                </div>
             </div>
 
 
@@ -102,6 +110,19 @@
                 </div>
             </div>
 
+        </div>
+
+        <div id="avaliacao">
+            <form>
+                <div>
+                  <div class="form-group">
+                      
+                  </div>
+                </div>
+                <div>
+
+                </div>
+            </form>
         </div>
     </main>
 </body>
